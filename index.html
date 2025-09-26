@@ -1,146 +1,240 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mening Portfolio</title>
+    <title>Shahriyor | Full Stack Developer</title>
+    <meta name="description" content="Shahriyor — Full Stack Developer. Fast, scalable and creative web solutions with focus on accessibility, UX and performance." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:title" content="Shahriyor | Full Stack Developer" />
+    <meta property="og:description" content="Fast, scalable and visually engaging web applications — human-centered approach." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="canonical" href="/" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
+    <a href="#home" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
     <header>
-      <nav>
-        <div class="logo">Portfolio</div>
-        <ul class="nav-links">
-          <li><a href="#home">Bosh sahifa</a></li>
-          <li><a href="#about">Men haqimda</a></li>
-          <li><a href="#skills">Ko'nikmalar</a></li>
-          <li><a href="#projects">Loyihalar</a></li>
-          <li><a href="#contact">Aloqa</a></li>
+      <nav aria-label="Main navigation">
+        <div class="logo" aria-label="Shahriyor logo">Shahriyor.dev</div>
+        <ul class="nav-links" role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="home" class="hero">
-      <div id="particles-js"></div>
+    <section id="home" class="hero" aria-label="Introduction">
+      <div id="particles-js" aria-hidden="true"></div>
       <div class="hero-content">
-        <h1>Salom, mening ismim <span class="highlight">Shahriyor</span></h1>
-        <h3>Web Dasturchi</h3>
-        <a href="#contact" class="cta-button">Men bilan bog'lanish</a>
+        <h1 class="hero-title">
+          <span class="hero-role">Full Stack Developer</span>
+        </h1>
+        <h1>Crafting Human-Centered Digital Experiences</h1>
+        <p class="hero-desc">
+          I specialize in building fast, scalable and visually engaging web applications where technology meets creativity. With a strong focus on accessibility and user experience, I deliver responsive, human‑centered products designed to make a lasting impact.
+        </p>
+        <a href="#contact" class="cta-button hero-cta" aria-label="Contact Shahriyor">Contact Me</a>
       </div>
     </section>
 
-    <section id="about" class="about">
-      <h2>Men haqimda</h2>
+    <section id="about" class="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
       <div class="about-content">
         <div class="profile-image">
-          <img src="images/picture.jpg" alt="Shahriyor Zaripov" />
+          <img src="images/picture.jpg" alt="Shahriyor Zaripov portrait" loading="lazy" />
         </div>
         <div class="about-text">
+
           <p>
-            Men Zaripov Shahriyor, Toshkent Axborot Texnologiyalari Universiteti
-            2-kurs talabasiman.
+            Full Stack Developer focused on building modern, scalable and user‑friendly products. I bridge elegant frontends with robust backends to deliver clean, performant and accessible web experiences.
           </p>
-          <p>
-            Hozirda Najot Ta'lim o'quv markazida Fullstack yo'nalishida o'qishni
-            davom etyapman.
-          </p>
-          <p>
-            Web dasturlash sohasida yangi bilimlar olish va amaliy loyihalar
-            yaratish orqali o'z ko'nikmalarimni rivojlantirmoqdaman.
-          </p>
+          <ul class="about-highlights" role="list">
+            <li>Clean. Modular. Maintainable.</li>
+            <li>Fast. Accessible. User‑first.</li>
+            <li>CI/CD. Observable. Cloud‑scale.</li>
+          </ul>
+          <div class="about-actions">
+            <a class="resume-btn" href="images/resume.pdf" download rel="noopener" aria-label="Download Resume (PDF)">
+              <i class="fas fa-download" aria-hidden="true"></i>
+              Download Resume
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="skills">
-      <h2>Mening ko'nikmalarim</h2>
+    <section id="skills" class="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">My Skills</h2>
       <div class="skills-grid">
-        <div class="skill-card">
-          <i class="fas fa-code"></i>
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, TypeScript</p>
+        <div class="skill-card" aria-label="Frontend skills">
+          <i class="fas fa-code" aria-hidden="true"></i>
+          <h3>Frontend Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Sass</span>
+            <span class="skill-tag">Tailwind</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">React</span>
+          </div>
         </div>
-        <div class="skill-card">
-          <i class="fas fa-server"></i>
+        <div class="skill-card" aria-label="Backend skills">
+          <i class="fas fa-server" aria-hidden="true"></i>
           <h3>Backend</h3>
-          <p>Node.js, Express.js, Nest.js</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">NestJS</span>
+          </div>
         </div>
-        <div class="skill-card">
-          <i class="fas fa-database"></i>
-          <h3>Ma'lumotlar bazasi</h3>
-          <p>MySQL, MongoDB, PostgreSQL</p>
+        <div class="skill-card" aria-label="Database">
+          <i class="fas fa-database" aria-hidden="true"></i>
+          <h3>Database</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="projects">
-      <h2>Mening loyihalarim</h2>
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">My Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
           <div class="project-content">
-            <h3>Loyihalar tez orada</h3>
-            <p>
-              Hozirda o'qish va o'rganish jarayonida bo'lganim uchun,
-              loyihalarim tez orada qo'shiladi. Men o'z bilimlarimni
-              rivojlantirish va yangi loyihalar yaratish ustida ishlayapman.
-            </p>
+            <h3>Movie App</h3>
+            <p>Modern movie catalog application built with React + TypeScript + Vite.</p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://movie-sandy-omega.vercel.app" target="_blank" rel="noopener" class="btn btn-live">Live</a>
+              <a href="https://github.com/Shahriyor2077/movie" target="_blank" rel="noopener" class="btn btn-code">Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>E‑Commerce</h3>
+            <p>Modern e‑commerce application built with React + TypeScript: products, cart and payment process UI/logic.</p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Tailwind</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://e-commerce-gamma-hazel-13.vercel.app/" target="_blank" rel="noopener" class="btn btn-live">Live</a>
+              <a href="https://github.com/Shahriyor2077/e-commerce" target="_blank" rel="noopener" class="btn btn-code">Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3>Food Landing</h3>
+            <p>Modern landing page for food delivery: menu, features and CTA.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://food-one-livid.vercel.app/" target="_blank" rel="noopener" class="btn btn-live">Live</a>
+              <a href="https://github.com/Shahriyor2077/food.git" target="_blank" rel="noopener" class="btn btn-code">Code</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Bog'lanish</h2>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
       <div class="contact-content">
         <div class="contact-info">
           <div class="contact-item">
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
             <h3>Email</h3>
-            <p>zaripovshahriyor91@email.com</p>
+            <p><a href="mailto:zaripovshahriyor91@email.com">zaripovshahriyor91@email.com</a></p>
           </div>
           <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <h3>Telefon</h3>
-            <p>+998 91 012 20 77</p>
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <h3>Phone</h3>
+            <p><a href="tel:+998910122077">+998 91 012 20 77</a></p>
           </div>
           <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>Manzil</h3>
-            <p>Toshkent, O'zbekiston</p>
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <h3>Location</h3>
+            <p>Tashkent, Uzbekistan</p>
           </div>
         </div>
         <div class="social-links">
-          <a href="https://t.me/shookh_uz" target="_blank" title="Telegram"
-            ><i class="fab fa-telegram"></i
+          <a href="https://t.me/shookh_uz" target="_blank" rel="noopener noreferrer" title="Telegram"
+            ><i class="fab fa-telegram" aria-hidden="true"></i
           ></a>
           <a
             href="https://t.me/shookh_dev"
             target="_blank"
-            title="Telegram Kanal"
-            ><i class="fas fa-broadcast-tower"></i
+            rel="noopener noreferrer"
+            title="Telegram Channel"
+            ><i class="fas fa-broadcast-tower" aria-hidden="true"></i
           ></a>
           <a
             href="https://github.com/Shahriyor2077"
             target="_blank"
+            rel="noopener noreferrer"
             title="GitHub"
-            ><i class="fab fa-github"></i
+            ><i class="fab fa-github" aria-hidden="true"></i
           ></a>
           <a
             href="https://instagram.com/shookh_uz"
             target="_blank"
+            rel="noopener noreferrer"
             title="Instagram"
-            ><i class="fab fa-instagram"></i
+            ><i class="fab fa-instagram" aria-hidden="true"></i
           ></a>
         </div>
       </div>
     </section>
 
     <footer>
-      <p>&copy; 2025 Mening Portfolio. Barcha huquqlar himoyalangan.</p>
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <h3>Shahriyor.dev</h3>
+            <p>Full Stack Developer crafting digital experiences</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://t.me/shookh_uz" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://github.com/Shahriyor2077" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://instagram.com/shookh_uz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Shahriyor Zaripov. All rights reserved.</p>
+          <a href="#home" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
