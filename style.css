@@ -105,7 +105,7 @@ nav {
   overflow: hidden;
 }
 
-/* Gradient glow blobs behind content */
+
 .hero::before,
 .hero::after {
   content: "";
@@ -141,7 +141,7 @@ nav {
   50% { transform: translateY(-25px) translateX(-15px) scale(1.04); }
 }
 
-/* Glassmorphism panel */
+
 .hero-content {
   position: relative;
   z-index: 1;
@@ -155,7 +155,7 @@ nav {
   backdrop-filter: blur(12px);
 }
 
-/* Subtle top highlight line */
+
 .hero-content::before {
   content: "";
   position: absolute;
@@ -168,7 +168,7 @@ nav {
   border-top-right-radius: 20px;
 }
 
-/* Title, subtitle, description already styled below; just refine sizes for premium balance */
+
 .hero-title {
   font-size: 3.4rem;
   font-weight: 800;
@@ -235,7 +235,7 @@ nav {
   animation: fadeInUp 1.05s cubic-bezier(.23,1.01,.32,1) 0.2s both;
 }
 
-/* CTA premium shine effect */
+
 .hero-cta {
   display: inline-block;
   margin: 0 auto;
@@ -270,7 +270,8 @@ nav {
 }
 .hero-cta:hover::after { left: 120%; }
 
-/* Responsive refinement */
+
+
 @media (max-width: 1024px) {
   .hero-title { font-size: 3rem; }
   .hero-desc { max-width: 620px; }
